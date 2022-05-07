@@ -19,12 +19,14 @@ void display(int arr[], int size)
     {
         printf("%d ", arr[i]);
     }
+    printf("\n");
 }
 int main()
 {
     int arr[] = {1, 2, 3, 4, 5};
     int index = 0;
     int size = sizeof(arr) / sizeof(int);
+    display(arr,size);
     int capacity = 100;
     int check = array_del(arr, index, size, capacity);
     if (check == 1)
